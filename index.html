@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="dist/output.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div
+      id="wrapper"
+      class="flex items-center justify-center bg-slate-100 h-screen"
+    >
+      <div id="card" class="bg-cyan-800 h-3/4 w-1/3 rounded-lg relative">
+        <h1 class="text-center text-2xl text-white">
+          Temperature Amplitude Calculator
+        </h1>
+        <form class="child:block">
+          <label for="temperatureUnit">Select temperature unit:</label>
+          <select name="temperatureUnit" id="temperatureUnit">
+            <option value="celsiusUnit">Degrees Celsius (°C)</option>
+            <option value="fahrenheitUnit">Degrees Fahrenheit (°F)</option>
+            <option value="kelvinUnit">Degrees Kelvin (K)</option>
+          </select>
+          <label for="tempOne">Temperature n°1:</label>
+          <input type="number" name="tempOne" id="tempOne" />
+          <label for="tempTwo">Temperature n°2:</label>
+          <input type="number" name="tempTwo" id="tempTwo" />
+        </form>
+        <div
+          id="result"
+          class="absolute bottom-0 w-full bg-sky-950 rounded-b-lg h-1/5"
+        >
+          <span>Result</span>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
